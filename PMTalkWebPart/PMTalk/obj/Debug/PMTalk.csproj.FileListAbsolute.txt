@@ -1,5 +1,0 @@
-C:\Users\jens.delannoy\Documents\Project\PMTalkWebPart\PMTalk\bin\Debug\PMTalk.dll
-C:\Users\jens.delannoy\Documents\Project\PMTalkWebPart\PMTalk\bin\Debug\PMTalk.pdb
-C:\Users\jens.delannoy\Documents\Project\PMTalkWebPart\PMTalk\obj\Debug\PMTalk.dll
-C:\Users\jens.delannoy\Documents\Project\PMTalkWebPart\PMTalk\obj\Debug\PMTalk.pdb
-C:\Users\jens.delannoy\Documents\Project\PMTalkWebPart\PMTalk\obj\Debug\PMTalk.csprojResolveAssemblyReference.cache

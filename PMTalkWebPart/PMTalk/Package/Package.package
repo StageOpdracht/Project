@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="9ecb2b70-1212-4305-ba4a-99bc3a52ff6e" solutionId="9ecb2b70-1212-4305-ba4a-99bc3a52ff6e" resetWebServer="false" sharePointProductVersion="15.0" name="PMTalk" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
-  <features>
-    <featureReference itemId="ef7a6a35-0430-4953-baf2-d41821c7de09" />
-  </features>
-</package>

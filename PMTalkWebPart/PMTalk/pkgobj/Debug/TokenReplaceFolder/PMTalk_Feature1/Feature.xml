@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="822251c7-7725-4f89-aa0c-63ba94fdca05" Scope="Site" Title="PMTalk Feature1">
-  <ElementManifests>
-    <ElementManifest Location="VisualWebPart1\Elements.xml" />
-    <ElementFile Location="VisualWebPart1\VisualWebPart1.webpart" />
-  </ElementManifests>
-</Feature>
