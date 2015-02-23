@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="9ecb2b70-1212-4305-ba4a-99bc3a52ff6e" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="PMTalk.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="PMTalk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=11548260847dc0ba" Namespace="PMTalk.VisualWebPart1" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\PMTalk\VisualWebPart1\VisualWebPart1UserControl.ascx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="PMTalk_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>
