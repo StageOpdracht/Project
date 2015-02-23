@@ -1,0 +1,5 @@
+C:\Users\jens.delannoy\Documents\Project\PMTalkWebPart\PMTalkWebPart\bin\Debug\PMTalkWebPart.dll
+C:\Users\jens.delannoy\Documents\Project\PMTalkWebPart\PMTalkWebPart\bin\Debug\PMTalkWebPart.pdb
+C:\Users\jens.delannoy\Documents\Project\PMTalkWebPart\PMTalkWebPart\obj\Debug\PMTalkWebPart.dll
+C:\Users\jens.delannoy\Documents\Project\PMTalkWebPart\PMTalkWebPart\obj\Debug\PMTalkWebPart.pdb
+C:\Users\jens.delannoy\Documents\Project\PMTalkWebPart\PMTalkWebPart\obj\Debug\PMTalkWebPart.csprojResolveAssemblyReference.cache
