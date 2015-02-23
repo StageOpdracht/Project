@@ -1,14 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{70DB2D29-ABDB-4009-B396-BD5E516C2B93}</ProjectGuid>
+    <ProjectGuid>{9b152c4a-ebd2-44e0-be5c-7467352e5e3b}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Project</RootNamespace>
-    <AssemblyName>Project</AssemblyName>
+    <RootNamespace>WebPartSharepoint</RootNamespace>
+    <AssemblyName>WebPartSharepoint</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetOfficeVersion>15.0</TargetOfficeVersion>
     <FileAlignment>512</FileAlignment>
@@ -33,21 +32,11 @@
     <WarningLevel>4</WarningLevel>
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
-  <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
-  </PropertyGroup>
-  <PropertyGroup>
-    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.DynamicData" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.SharePoint" />
@@ -55,34 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VisualWebPart1\VisualWebPart1.ascx.cs">
-      <DependentUpon>VisualWebPart1.ascx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Features\Feature1\Feature1.feature">
-      <FeatureId>{34c51418-5844-4617-8898-5426b46ab7e9}</FeatureId>
-    </None>
-    <None Include="key.snk" />
     <None Include="Package\Package.package">
-      <PackageId>{e8d337ca-9562-4df9-b4d8-8718ddb10af8}</PackageId>
+        <PackageId>{b83931df-9b93-4cd7-9e8e-9961e5ca178d}</PackageId>
     </None>
     <None Include="Package\Package.Template.xml">
-      <DependentUpon>Package.package</DependentUpon>
+        <DependentUpon>Package.package</DependentUpon>
     </None>
-    <None Include="VisualWebPart1\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{a5afdc00-6bef-45db-af43-bf8e95012c5d}</SharePointProjectItemId>
-    </None>
-    <None Include="VisualWebPart1\VisualWebPart1.webpart" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Features\Feature1\Feature1.Template.xml">
-      <DependentUpon>Feature1.feature</DependentUpon>
-    </Content>
-    <Content Include="VisualWebPart1\Elements.xml" />
-    <Content Include="VisualWebPart1\VisualWebPart1.ascx">
-      <Generator>SharePointWebPartCodeGenerator</Generator>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
