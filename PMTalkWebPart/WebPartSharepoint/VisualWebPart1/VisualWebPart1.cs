@@ -16,24 +16,13 @@ namespace WebPartSharepoint.VisualWebPart1
         // Visual Studio might automatically update this path when you change the Visual Web Part project item.
         private const string _ascxPath = @"~/_CONTROLTEMPLATES/15/WebPartSharepoint/VisualWebPart1/VisualWebPart1UserControl.ascx";
         private string fileContent;
+        private SPListCollection readListCollection;
 
         protected override void CreateChildControls()
         {
-            base.CreateChildControls();
-            Control list = new Control();
-
+            Control control = Page.LoadControl(_ascxPath);
+            Controls.Add(control);
         }
 
-        private void readFromFile()
-        {
-            XmlTextReader reader = new XmlTextReader("");
-
-            fileContent = reader.ReadContentAsString();
-        }
-
-        public void AddListsToWebPart()
-        {
-                 
-        }
     }
 }
