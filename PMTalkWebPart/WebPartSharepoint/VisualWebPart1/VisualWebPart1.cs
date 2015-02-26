@@ -16,19 +16,14 @@ namespace WebPartSharepoint.VisualWebPart1
         // Visual Studio might automatically update this path when you change the Visual Web Part project item.
         private const string _ascxPath = @"~/_CONTROLTEMPLATES/15/WebPartSharepoint/VisualWebPart1/VisualWebPart1UserControl.ascx";
 
+        public VisualWebPart1()
+        {
+
+        }
+
         protected override void CreateChildControls()
         {
             
         }
-
-        private void customEventHandler(object sender, WebPartEventArgs e)
-        {
-            
-        }
-
-        private void readFromFile()
-        {
-        }
-
     }
 }
