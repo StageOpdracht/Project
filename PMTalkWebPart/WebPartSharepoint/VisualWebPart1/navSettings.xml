@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <navSettings>
-  <navSetting name="Users" image="Threon.SP2013.P000/t_users.png" description="Manage users and access rights">Threon.SP2013.P000/pEntityList.aspx?EntityUID=5b068137-d0b0-4dab-97fa-9cad526b650a</navSetting>  
+  <navSetting name="Users"
+              image="Threon.SP2013.P000/t_users.png" 
+              description="Manage users and access rights">Threon.SP2013.P000/pEntityList.aspx?EntityUID=5b068137-d0b0-4dab-97fa-9cad526b650a</navSetting>  
+
 </navSettings>
+
