@@ -3,10 +3,10 @@ using System.ComponentModel;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
 using Microsoft.SharePoint;
 using Microsoft.SharePoint.WebControls;
 using System.Xml;
+using System.Web.UI.WebControls.WebParts;
 
 namespace WebPartSharepoint.VisualWebPart1
 {
@@ -15,13 +15,19 @@ namespace WebPartSharepoint.VisualWebPart1
     {
         // Visual Studio might automatically update this path when you change the Visual Web Part project item.
         private const string _ascxPath = @"~/_CONTROLTEMPLATES/15/WebPartSharepoint/VisualWebPart1/VisualWebPart1UserControl.ascx";
-        private string fileContent;
-        private SPListCollection readListCollection;
 
         protected override void CreateChildControls()
         {
-            Control control = Page.LoadControl(_ascxPath);
-            Controls.Add(control);
+            
+        }
+
+        private void customEventHandler(object sender, WebPartEventArgs e)
+        {
+            
+        }
+
+        private void readFromFile()
+        {
         }
 
     }

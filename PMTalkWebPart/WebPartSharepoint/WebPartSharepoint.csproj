@@ -74,9 +74,6 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
-    <None Include="PromotedLinkList\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{17755fbb-e626-42fb-aa09-cad95c2cb8fc}</SharePointProjectItemId>
-    </None>
     <None Include="VisualWebPart1\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{c46de08f-fd91-46aa-8e83-ca5dcc7d6e30}</SharePointProjectItemId>
     </None>
@@ -86,8 +83,9 @@
     <Content Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>
     </Content>
-    <Content Include="PromotedLinkList\Elements.xml" />
-    <Content Include="VisualWebPart1\Elements.xml" />
+    <Content Include="VisualWebPart1\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="VisualWebPart1\VisualWebPart1UserControl.ascx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
