@@ -2,4 +2,12 @@ C:\Users\jens.delannoy\Documents\Project\PMTalkWebPart\WebPartSharepoint\bin\Deb
 C:\Users\jens.delannoy\Documents\Project\PMTalkWebPart\WebPartSharepoint\bin\Debug\WebPartSharepoint.pdb
 C:\Users\jens.delannoy\Documents\Project\PMTalkWebPart\WebPartSharepoint\obj\Debug\WebPartSharepoint.dll
 C:\Users\jens.delannoy\Documents\Project\PMTalkWebPart\WebPartSharepoint\obj\Debug\WebPartSharepoint.pdb
+<<<<<<< HEAD
+C:\Users\maxime.gaveele\Documents\Project\PMTalkWebPart\WebPartSharepoint\bin\Debug\WebPartSharepoint.dll
+C:\Users\maxime.gaveele\Documents\Project\PMTalkWebPart\WebPartSharepoint\bin\Debug\WebPartSharepoint.pdb
+C:\Users\maxime.gaveele\Documents\Project\PMTalkWebPart\WebPartSharepoint\obj\Debug\WebPartSharepoint.csprojResolveAssemblyReference.cache
+C:\Users\maxime.gaveele\Documents\Project\PMTalkWebPart\WebPartSharepoint\obj\Debug\WebPartSharepoint.dll
+C:\Users\maxime.gaveele\Documents\Project\PMTalkWebPart\WebPartSharepoint\obj\Debug\WebPartSharepoint.pdb
+=======
 C:\Users\jens.delannoy\Documents\Project\PMTalkWebPart\WebPartSharepoint\obj\Debug\WebPartSharepoint.csprojResolveAssemblyReference.cache
+>>>>>>> 5a556c5f8036729f4ad8e9439a9da7fe0c89990a

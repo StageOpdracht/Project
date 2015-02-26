@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VisualWebPart1\input.cs" />
     <Compile Include="VisualWebPart1\VisualWebPart1.cs" />
     <Compile Include="VisualWebPart1\VisualWebPart1UserControl.ascx.cs">
       <DependentUpon>VisualWebPart1UserControl.ascx</DependentUpon>
@@ -83,9 +84,8 @@
     <Content Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>
     </Content>
-    <Content Include="VisualWebPart1\Elements.xml">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="VisualWebPart1\Elements.xml" />
+    <Content Include="VisualWebPart1\navSettings.xml" />
     <Content Include="VisualWebPart1\VisualWebPart1UserControl.ascx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
