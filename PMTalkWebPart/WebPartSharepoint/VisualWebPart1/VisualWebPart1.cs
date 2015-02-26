@@ -15,22 +15,25 @@ namespace WebPartSharepoint.VisualWebPart1
 {
 
     /* Copyright by Maxime Gaveele 2015 Jon Bille Productions */
-    
+
     [ToolboxItemAttribute(false)]
     public class WebPart1 : WebPart
     {
         // Visual Studio might automatically update this path when you change the Visual Web Part project item.
         private const string _ascxPath = @"~/_CONTROLTEMPLATES/15/WebPartSharepoint/VisualWebPart1/VisualWebPart1UserControl.ascx";
         private string fileContent;
-        public WebPart1 ()
-	{
-        readFromFile("C:\\Development\\navSettings.xml");
-	}
+
+        public WebPart1()
+        {
+
+            readFromFile("C:\\Development\\navSettings.xml");
+        }
+
         private void readFromFile(string filename)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(List<string>));
 
-           
+
             using (FileStream stream = File.OpenRead(filename))
             {
                 List<string> dezerializedList = (List<string>)serializer.Deserialize(stream);
@@ -39,7 +42,7 @@ namespace WebPartSharepoint.VisualWebPart1
 
         protected override void CreateChildControls()
         {
-            
+
         }
     }
 }
