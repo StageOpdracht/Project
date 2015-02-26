@@ -7,48 +7,29 @@ using System.Xml.Serialization;
 
 namespace WebPartSharepoint.VisualWebPart1
 {
-    /// <remarks/>
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class navSettings
+    [XmlType("navSettings")]
+    public partial class NavSettings
     {
-
-        private navSettingsNavSetting navSettingField;
-
-        /// <remarks/>
-        public navSettingsNavSetting navSetting
-        {
-            get
-            {
-                return this.navSettingField;
-            }
-            set
-            {
-                this.navSettingField = value;
-            }
-        }
+        [XmlElement("navSetting", typeof(NavSetting))]           
+        public List<NavSetting> NavSettingList { get; set; }
     }
 
-    /// <remarks/>
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class navSettingsNavSetting
+
+    [XmlType("navSetting")]
+    public partial class NavSetting
     {
+        [XmlAttributeAttribute("name")]
+        public string Name { get; set; }
 
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string name { get; private set; }
+        [XmlAttributeAttribute("image")]
+        public string Image { get; set; }
 
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string image { get; private set; }
+        [XmlAttributeAttribute("description")]
+        public string Description { get; set; }
 
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string description { get; private set; }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlTextAttribute()]
-        public string Value { get; private set; }
+        [XmlTextAttribute()]
+        public string Value { get; set; }
     }
 }
-

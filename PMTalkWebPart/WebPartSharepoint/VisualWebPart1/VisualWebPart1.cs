@@ -24,13 +24,13 @@ namespace WebPartSharepoint.VisualWebPart1
         private const string _ascxPath = @"~/_CONTROLTEMPLATES/15/WebPartSharepoint/VisualWebPart1/VisualWebPart1UserControl.ascx";
         private SPSite _site;
         private SPWeb _web;
-       private navSettings _navSettings;
-        private List<navSettings> _listItems;
+        private NavSettings _navSettings;
 
         public WebPart1()
         {
             _site = SPContext.Current.Site;
             _web = _site.OpenWeb();
+            _web.AllowUnsafeUpdates = true;
             readFromFile("navSettings.xml");
             updateTileList();
         }
@@ -41,35 +41,58 @@ namespace WebPartSharepoint.VisualWebPart1
 
             SPListItem item;
 
-            foreach (navSettingsNavSetting i in _listItems)
+
+
+            foreach (NavSetting i in _navSettings.NavSettingList)
             {
-                item = items.Add();
+                bool times = true;
+                foreach (SPListItem itm in items)
+                {
+                    if (!i.Name.Equals(itm.Name) && times)
+                    {
+                        item = items.Add();
 
-                item["Title"] = i.name;
-                item["Description"] = i.description;
-                item["LinkLocation"] = i.Value;
-                item["BackGroundImageLocation"] = i.image;
+                        item["Title"] = i.Name;
+                        item["Description"] = i.Description;
+                        //item["LinkLocation"] = i.Value;
+                        //item["BackGroundImageLocation"] = i.Image;
 
 
-                item.Update();
+                        item.Update();
+                        times = false;
+                    }
+                }
+                if(items.Count==0)
+                {
+                    item = items.Add();
+
+                    item["Title"] = i.Name;
+                    item["Description"] = i.Description;
+                    //item["LinkLocation"] = i.Value;
+                    //item["BackGroundImageLocation"] = i.Image;
+
+
+                    item.Update();
+                    times = false;
+                }
+
             }
         }
-        
+
         private void readFromFile(string filename)
         {
-            XmlSerializer serializer = new XmlSerializer(typeof(navSettings));
+            XmlSerializer serializer = new XmlSerializer(typeof(NavSettings));
 
-            using (FileStream stream = File.OpenRead(filename)) { 
-                _navSettings = (navSettings)serializer.Deserialize(stream);
-                _listItems.Add(_navSettings);
-                Console.WriteLine("noper"); 
+            using (FileStream stream = File.OpenRead(filename))
+            {
+                _navSettings = (NavSettings)serializer.Deserialize(stream);
+                Console.WriteLine("noper");
             }
         }
 
         protected override void CreateChildControls()
         {
             base.CreateChildControls();
-            SPLimitedWebPartManager limitedWebPartManager = null;
             SPList targetList = _web.Lists["TileList"];
 
             XsltListViewWebPart promotedListView = new XsltListViewWebPart();
