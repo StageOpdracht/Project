@@ -7,11 +7,19 @@ using System.Threading.Tasks;
 namespace WebPartSharepoint.VisualWebPart1
 {
     class Input
-    { /*
-        private string naam; {get { return naam} ; set;}
-        private string image;
-        private string description;
-       * */
+    {
+        private string name { get { return name; } set { this.name = name; } }
+        private string image { get { return image; } set { this.image = image; } }
+        private string description { get { return description; } set { this.description = description; } }
+
+
+        public Input(string name, string image, string description)
+        {
+            this.name = name;
+            this.image = image;
+            this.description = description;
+        }
+       
 
     }
 }

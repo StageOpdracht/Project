@@ -11,6 +11,6 @@
     <TemplateFile Location="CONTROLTEMPLATES\WebPartSharepoint\VisualWebPart1\VisualWebPart1UserControl.ascx" />
   </TemplateFiles>
   <FeatureManifests>
-    <FeatureManifest Location="JonBille_Feature1\Feature.xml" />
+    <FeatureManifest Location="WebPartSharepoint_Feature1\Feature.xml" />
   </FeatureManifests>
 </Solution>

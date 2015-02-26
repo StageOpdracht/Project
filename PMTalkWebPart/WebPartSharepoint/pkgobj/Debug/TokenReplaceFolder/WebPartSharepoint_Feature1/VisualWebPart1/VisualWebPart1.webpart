@@ -2,7 +2,7 @@
 <webParts>
   <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
     <metaData>
-      <type name="WebPartSharepoint.VisualWebPart1.JonBille, WebPartSharepoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=674b4bcd65a52d7a" />
+      <type name="WebPartSharepoint.VisualWebPart1.WebPart1, WebPartSharepoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=674b4bcd65a52d7a" />
       <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
     </metaData>
     <data>
