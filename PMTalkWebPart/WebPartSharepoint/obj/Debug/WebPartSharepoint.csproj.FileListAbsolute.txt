@@ -1,4 +1,4 @@
-C:\Users\jens.delannoy\Documents\Project\PMTalkWebPart\WebPartSharepoint\bin\Debug\WebPartSharepoint.dll
-C:\Users\jens.delannoy\Documents\Project\PMTalkWebPart\WebPartSharepoint\bin\Debug\WebPartSharepoint.pdb
-C:\Users\jens.delannoy\Documents\Project\PMTalkWebPart\WebPartSharepoint\obj\Debug\WebPartSharepoint.dll
-C:\Users\jens.delannoy\Documents\Project\PMTalkWebPart\WebPartSharepoint\obj\Debug\WebPartSharepoint.pdb
+C:\Users\maxime.gaveele\Documents\Project\stageopdracht\PMTalkWebPart\WebPartSharepoint\bin\Debug\WebPartSharepoint.dll
+C:\Users\maxime.gaveele\Documents\Project\stageopdracht\PMTalkWebPart\WebPartSharepoint\bin\Debug\WebPartSharepoint.pdb
+C:\Users\maxime.gaveele\Documents\Project\stageopdracht\PMTalkWebPart\WebPartSharepoint\obj\Debug\WebPartSharepoint.dll
+C:\Users\maxime.gaveele\Documents\Project\stageopdracht\PMTalkWebPart\WebPartSharepoint\obj\Debug\WebPartSharepoint.pdb

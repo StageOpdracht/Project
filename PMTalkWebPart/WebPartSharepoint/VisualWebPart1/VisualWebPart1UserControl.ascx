@@ -8,3 +8,4 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="VisualWebPart1UserControl.ascx.cs" Inherits="WebPartSharepoint.VisualWebPart1.VisualWebPart1UserControl" %>
 
 <h1>Hello world</h1>
+<asp:Label ID="lblTitle" runat="server" Text="Title"></asp:Label>
