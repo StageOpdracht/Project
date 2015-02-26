@@ -75,7 +75,7 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
-    <None Include="TileList\SharePointProjectItem.spdata">
+    <None Include="VisualWebPart1\TileList\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{8550e9f5-117a-4d3f-86dc-53c010b992f4}</SharePointProjectItemId>
     </None>
     <None Include="VisualWebPart1\SharePointProjectItem.spdata">
@@ -87,7 +87,7 @@
     <Content Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>
     </Content>
-    <Content Include="TileList\Elements.xml" />
+    <Content Include="VisualWebPart1\TileList\Elements.xml" />
     <Content Include="VisualWebPart1\Elements.xml">
       <SubType>Designer</SubType>
     </Content>

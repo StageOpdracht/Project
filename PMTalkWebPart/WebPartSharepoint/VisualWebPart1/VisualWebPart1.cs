@@ -23,40 +23,40 @@ namespace WebPartSharepoint.VisualWebPart1
         // Visual Studio might automatically update this path when you change the Visual Web Part project item.
         private const string _ascxPath = @"~/_CONTROLTEMPLATES/15/WebPartSharepoint/VisualWebPart1/VisualWebPart1UserControl.ascx";
         private string fileContent;
-        private XsltListViewWebPart listView;
-        private List<Input> listItems;
+        private SPSite _site;
+        private SPWeb _web;
+        private ListViewWebPart _listView;
+        private List<Input> _listItems;
 
         public WebPart1()
         {
-            listView = new XsltListViewWebPart();
+            _site = SPContext.Current.Site;
+            _web = _site.OpenWeb();
+            _listView = new ListViewWebPart();
             //readFromFile("navSettings.xml");
-            updateElementXml();
-            FillList();
+            updateTileList();
         }
 
-        private void updateElementXml()
+        private void updateTileList()
         {
-            XDocument document = XDocument.Load("TileList/Elements.xml");
-            XElement root = document.Root;
+            SPListItemCollection items = _web.Lists["TileList"].Items;
 
+            SPListItem item;
+
+            foreach(Input i in _listItems)
+            {
+                item = items.Add();
+
+                item["Title"] = i.Name;
+                item["Description"] = i.Description;
+                item["LinkLocation"] = "";
+                item["BackGroundImageLocation"] = i.Image;
+
+
+                item.Update();
+            }
         }
-
-        private void FillList()
-        {
-            SPSite site = SPContext.Current.Site;
-            SPWeb web = site.OpenWeb();
-
-            //Create the list in sharepoint
-            listView.ID = "XsltListViewAppPromotedList";
-            listView.ListUrl = "Lists/TileList";
-            listView.IsIncluded = true;
-            listView.NoDefaultStyle = "TRUE";
-            listView.Title = "Images used in switcher";
-            listView.PageType = PAGETYPE.PAGE_NORMALVIEW;
-            listView.Default = "False";
-            listView.ViewContentTypeId = "0x";
-        }
-
+        
         private void readFromFile(string filename)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(List<string>));
@@ -71,7 +71,7 @@ namespace WebPartSharepoint.VisualWebPart1
         protected override void CreateChildControls()
         {
             base.CreateChildControls();
-            Controls.Add(listView);
+            Controls.Add(_listView);
         }
 
     }
