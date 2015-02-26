@@ -84,6 +84,7 @@
       <DependentUpon>Feature1.feature</DependentUpon>
     </Content>
     <Content Include="VisualWebPart1\Elements.xml" />
+    <Content Include="VisualWebPart1\navSettings.xml" />
     <Content Include="VisualWebPart1\VisualWebPart1UserControl.ascx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
