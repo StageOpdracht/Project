@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="df200a1b-9e31-443c-ba52-9b0e7e014c05" 
+        solutionId="df200a1b-9e31-443c-ba52-9b0e7e014c05" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="PromotedLinksApp"
+        sharePointProductVersion="15.0">
+    <features>
+        <featureReference itemId="c42cdf47-fad2-45e5-be96-6fbb34e52bb1" />
+    </features>
+</package>

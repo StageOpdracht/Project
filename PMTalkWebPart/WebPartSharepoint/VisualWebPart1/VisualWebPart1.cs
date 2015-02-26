@@ -3,13 +3,16 @@ using System.ComponentModel;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
 using Microsoft.SharePoint;
 using Microsoft.SharePoint.WebControls;
 using System.Xml;
+<<<<<<< HEAD
 using System.Xml.Serialization;
 using System.IO;
 using System.Collections.Generic;
+=======
+using System.Web.UI.WebControls.WebParts;
+>>>>>>> 5a556c5f8036729f4ad8e9439a9da7fe0c89990a
 
 namespace WebPartSharepoint.VisualWebPart1
 {
@@ -21,19 +24,21 @@ namespace WebPartSharepoint.VisualWebPart1
     {
         // Visual Studio might automatically update this path when you change the Visual Web Part project item.
         private const string _ascxPath = @"~/_CONTROLTEMPLATES/15/WebPartSharepoint/VisualWebPart1/VisualWebPart1UserControl.ascx";
+<<<<<<< HEAD
         private string fileContent;
         public JonBille ()
 	{
         readFromFile("C:\\Development\\navSettings.xml");
 	}
+=======
+>>>>>>> 5a556c5f8036729f4ad8e9439a9da7fe0c89990a
 
         protected override void CreateChildControls()
         {
-            base.CreateChildControls();
-            Control list = new Control();
-
+            
         }
 
+<<<<<<< HEAD
         private void readFromFile(string filename)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(List<string>));
@@ -44,11 +49,16 @@ namespace WebPartSharepoint.VisualWebPart1
                 List<string> dezerializedList = (List<string>)serializer.Deserialize(stream);
             }
            
+=======
+        private void customEventHandler(object sender, WebPartEventArgs e)
+        {
+            
+>>>>>>> 5a556c5f8036729f4ad8e9439a9da7fe0c89990a
         }
 
-        public void AddListsToWebPart()
+        private void readFromFile()
         {
-                 
         }
+
     }
 }
