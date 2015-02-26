@@ -22,18 +22,15 @@ namespace WebPartSharepoint.VisualWebPart1
     {
         // Visual Studio might automatically update this path when you change the Visual Web Part project item.
         private const string _ascxPath = @"~/_CONTROLTEMPLATES/15/WebPartSharepoint/VisualWebPart1/VisualWebPart1UserControl.ascx";
-        private string fileContent;
         private SPSite _site;
         private SPWeb _web;
-        private ListViewWebPart _listView;
-        private navSettings _navSettings;
+       private navSettings _navSettings;
         private List<navSettings> _listItems;
 
         public WebPart1()
         {
             _site = SPContext.Current.Site;
             _web = _site.OpenWeb();
-            _listView = new ListViewWebPart();
             readFromFile("navSettings.xml");
             updateTileList();
         }
@@ -72,7 +69,13 @@ namespace WebPartSharepoint.VisualWebPart1
         protected override void CreateChildControls()
         {
             base.CreateChildControls();
-            Controls.Add(_listView);
+            SPLimitedWebPartManager limitedWebPartManager = null;
+            SPList targetList = _web.Lists["TileList"];
+
+            XsltListViewWebPart promotedListView = new XsltListViewWebPart();
+            promotedListView.ListId = targetList.ID;
+            promotedListView.ViewGuid = targetList.Views["Tiles"].ID.ToString("B").ToUpper();
+            Controls.Add(promotedListView);
         }
 
     }
