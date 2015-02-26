@@ -10,6 +10,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
 using System.Collections.Generic;
+using System.Xml.Linq;
 
 namespace WebPartSharepoint.VisualWebPart1
 {
@@ -29,7 +30,15 @@ namespace WebPartSharepoint.VisualWebPart1
         {
             listView = new XsltListViewWebPart();
             //readFromFile("navSettings.xml");
+            updateElementXml();
             FillList();
+        }
+
+        private void updateElementXml()
+        {
+            XDocument document = XDocument.Load("TileList/Elements.xml");
+            XElement root = document.Root;
+
         }
 
         private void FillList()
