@@ -3,12 +3,12 @@
   <Assemblies>
     <Assembly Location="WebPartSharepoint.dll" DeploymentTarget="GlobalAssemblyCache">
       <SafeControls>
-        <SafeControl Assembly="WebPartSharepoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=674b4bcd65a52d7a" Namespace="WebPartSharepoint.VisualWebPart1" TypeName="*" />
+        <SafeControl Assembly="WebPartSharepoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=674b4bcd65a52d7a" Namespace="WebPartSharepoint.MainWebPart" TypeName="*" />
       </SafeControls>
     </Assembly>
   </Assemblies>
   <TemplateFiles>
-    <TemplateFile Location="CONTROLTEMPLATES\WebPartSharepoint\VisualWebPart1\VisualWebPart1UserControl.ascx" />
+    <TemplateFile Location="XML\navSettings.xml" />
   </TemplateFiles>
   <FeatureManifests>
     <FeatureManifest Location="WebPartSharepoint_Feature1\Feature.xml" />

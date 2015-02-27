@@ -42,10 +42,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
@@ -56,46 +58,52 @@
     <Compile Include="Features\Feature1\Feature1.EventReceiver.cs">
       <DependentUpon>Feature1.feature</DependentUpon>
     </Compile>
+    <Compile Include="MainWebPart\MainWebPart.ascx.cs">
+      <DependentUpon>MainWebPart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MainWebPart\MainWebPart.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MainWebPart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MainWebPart\NavSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VisualWebPart1\NavSettings.cs" />
-    <Compile Include="VisualWebPart1\VisualWebPart1.cs" />
-    <Compile Include="VisualWebPart1\VisualWebPart1UserControl.ascx.cs">
-      <DependentUpon>VisualWebPart1UserControl.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="VisualWebPart1\VisualWebPart1UserControl.ascx.designer.cs">
-      <DependentUpon>VisualWebPart1UserControl.ascx.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Features\Feature1\Feature1.feature">
       <FeatureId>{802bc380-c77f-49e1-873c-3e33f3c1b41c}</FeatureId>
     </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d6d73667-741e-4318-a9c4-f31d31ece08b}</SharePointProjectItemId>
+    </None>
     <None Include="key.snk" />
+    <None Include="MainWebPart\MainWebPart.webpart" />
+    <None Include="MainWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8a34dce0-b5db-4475-90cd-913860f702ed}</SharePointProjectItemId>
+    </None>
     <None Include="Package\Package.package">
       <PackageId>{b83931df-9b93-4cd7-9e8e-9961e5ca178d}</PackageId>
     </None>
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
-    <None Include="VisualWebPart1\TileList\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{8550e9f5-117a-4d3f-86dc-53c010b992f4}</SharePointProjectItemId>
+    <None Include="XML\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{205b1f6c-8899-46c0-aa43-bedd5798f977}</SharePointProjectItemId>
     </None>
-    <None Include="VisualWebPart1\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{c46de08f-fd91-46aa-8e83-ca5dcc7d6e30}</SharePointProjectItemId>
-    </None>
-    <None Include="VisualWebPart1\VisualWebPart1.webpart" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>
     </Content>
-    <Content Include="VisualWebPart1\TileList\Elements.xml" />
-    <Content Include="VisualWebPart1\Elements.xml">
-      <SubType>Designer</SubType>
+    <Content Include="MainWebPart\Elements.xml" />
+    <Content Include="MainWebPart\MainWebPart.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>MainWebPart.ascx.g.cs</LastGenOutput>
     </Content>
-    <Content Include="VisualWebPart1\navSettings.xml" />
-    <Content Include="VisualWebPart1\VisualWebPart1UserControl.ascx" />
+    <Content Include="XML\navSettings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\WebPartSharepoint\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
