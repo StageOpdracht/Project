@@ -18,11 +18,6 @@ namespace WebPartSharepoint.MainWebPart
         private SPWeb c_objWeb;
         private NavSettings c_objNavSettings;
 
-        // Uncomment the following SecurityPermission attribute only when doing Performance Profiling on a farm solution
-        // using the Instrumentation method, and then remove the SecurityPermission attribute when the code is ready
-        // for production. Because the SecurityPermission attribute bypasses the security check for callers of
-        // your constructor, it's not recommended for production purposes.
-        // [System.Security.Permissions.SecurityPermission(System.Security.Permissions.SecurityAction.Assert, UnmanagedCode = true)]
         public MainWebPart()
         {
             c_objSite = SPContext.Current.Site;
@@ -45,10 +40,10 @@ namespace WebPartSharepoint.MainWebPart
 
         protected override TileData[] GetTiles()
         {
-            TileData[] l_objData = new TileData[c_objNavSettings.c_objPackList.Count];
+            TileData[] l_objData = new TileData[c_objNavSettings.c_objPackList.Count ];
             for (int i = 0; i < l_objData.Length; i++)
             {
-                Pack l_objPack = c_objNavSettings.c_objPackList[i];
+                Package l_objPack = c_objNavSettings.c_objPackList[i];
                 int num = 1 + i;
                 l_objData[i] = new TileData
                 {

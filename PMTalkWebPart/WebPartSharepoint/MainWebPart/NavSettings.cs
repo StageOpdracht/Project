@@ -12,15 +12,15 @@ namespace WebPartSharepoint.MainWebPart
     [XmlType("navSettings")]
     public partial class NavSettings
     {
-        [XmlElement("pack", typeof(Pack))]
-        public List<Pack> c_objPackList { get; set; }
+        [XmlElement("package", typeof(Package))]
+        public List<Package> c_objPackList { get; set; }
     }
 
     [XmlType("pack")]
-    public partial class Pack
+    public partial class Package
     {
-        [XmlElement("pack", typeof(Pack))]
-        public List<Pack> c_obNavSettingList { get; set; }
+        [XmlElement("navSetting", typeof(NavSetting))]
+        public List<NavSetting> c_obNavSettingList { get; set; }
 
         [XmlAttributeAttribute("name")]
         public string c_strName { get; set; }
