@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace WebPartSharepoint.MainWebPart
+namespace MainWebPart.Models
 {
 
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]

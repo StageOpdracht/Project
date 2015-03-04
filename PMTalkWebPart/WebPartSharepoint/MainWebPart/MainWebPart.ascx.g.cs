@@ -51,13 +51,7 @@ namespace WebPartSharepoint.MainWebPart {
         private void @__BuildControlTree(global::WebPartSharepoint.MainWebPart.MainWebPart @__ctrl) {
         }
         
-        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
-            "artCodeGenerator", "12.0.0.0")]
-        private void InitializeControl() {
-            this.@__BuildControlTree(this);
-            this.Load += new global::System.EventHandler(this.Page_Load);
-        }
-        
+               
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]

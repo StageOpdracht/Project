@@ -3,5 +3,7 @@
   <ElementManifests>
     <ElementManifest Location="MainWebPart\Elements.xml" />
     <ElementFile Location="MainWebPart\MainWebPart.webpart" />
+    <ElementManifest Location="PromotedLinkList\Elements.xml" />
+    <ElementFile Location="PromotedLinkList\PromotedLinkList.webpart" />
   </ElementManifests>
 </Feature>

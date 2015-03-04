@@ -4,6 +4,7 @@
     <Assembly Location="WebPartSharepoint.dll" DeploymentTarget="GlobalAssemblyCache">
       <SafeControls>
         <SafeControl Assembly="WebPartSharepoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=674b4bcd65a52d7a" Namespace="WebPartSharepoint.MainWebPart" TypeName="*" />
+        <SafeControl Assembly="WebPartSharepoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=674b4bcd65a52d7a" Namespace="WebPartSharepoint.MainWebPart.PromotedLinkList" TypeName="*" />
       </SafeControls>
     </Assembly>
   </Assemblies>

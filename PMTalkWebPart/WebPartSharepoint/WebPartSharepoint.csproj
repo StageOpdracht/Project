@@ -66,7 +66,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MainWebPart.ascx</DependentUpon>
     </Compile>
-    <Compile Include="MainWebPart\NavSettings.cs" />
+    <Compile Include="Models\NavSettings.cs" />
+    <Compile Include="PromotedLinkList\PromotedLinkList.ascx.cs">
+      <DependentUpon>PromotedLinkList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PromotedLinkList\PromotedLinkList.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PromotedLinkList.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -78,6 +86,10 @@
     </None>
     <None Include="key.snk" />
     <None Include="MainWebPart\MainWebPart.webpart" />
+    <None Include="PromotedLinkList\PromotedLinkList.webpart" />
+    <None Include="PromotedLinkList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b7af9869-a4bc-4f95-914a-8fba6c9e3cb3}</SharePointProjectItemId>
+    </None>
     <None Include="MainWebPart\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{8a34dce0-b5db-4475-90cd-913860f702ed}</SharePointProjectItemId>
     </None>
@@ -99,6 +111,11 @@
     <Content Include="MainWebPart\MainWebPart.ascx">
       <Generator>SharePointWebPartCodeGenerator</Generator>
       <LastGenOutput>MainWebPart.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="PromotedLinkList\Elements.xml" />
+    <Content Include="PromotedLinkList\PromotedLinkList.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>PromotedLinkList.ascx.g.cs</LastGenOutput>
     </Content>
     <Content Include="XML\navSettings.xml" />
   </ItemGroup>
