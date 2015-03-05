@@ -1,5 +1,0 @@
-C:\Users\maxime.gaveele\Documents\Project\PMTalkWebPart\WebPartSharepoint\obj\Debug\JonBille.csprojResolveAssemblyReference.cache
-C:\Users\maxime.gaveele\Documents\Project\PMTalkWebPart\WebPartSharepoint\obj\Debug\WebPartSharepoint.dll
-C:\Users\maxime.gaveele\Documents\Project\PMTalkWebPart\WebPartSharepoint\obj\Debug\WebPartSharepoint.pdb
-C:\Users\maxime.gaveele\Documents\Project\PMTalkWebPart\WebPartSharepoint\bin\Debug\WebPartSharepoint.dll
-C:\Users\maxime.gaveele\Documents\Project\PMTalkWebPart\WebPartSharepoint\bin\Debug\WebPartSharepoint.pdb

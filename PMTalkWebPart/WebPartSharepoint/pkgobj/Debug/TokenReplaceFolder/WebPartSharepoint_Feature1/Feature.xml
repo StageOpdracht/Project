@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="WebPartSharepoint Feature1" Id="78306156-d422-4e58-a5b2-a6b5f42836f1" Scope="Site">
-  <ElementManifests>
-    <ElementManifest Location="PromotedLinkList\Elements.xml" />
-    <ElementFile Location="PromotedLinkList\PromotedLinkList.webpart" />
-    <ElementManifest Location="VisualWebPart1\Elements.xml" />
-    <ElementFile Location="VisualWebPart1\VisualWebPart1.webpart" />
-  </ElementManifests>
-</Feature>
