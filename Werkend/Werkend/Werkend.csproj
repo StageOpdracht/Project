@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9B152C4A-EBD2-44E0-BE5C-7467352E5E3B}</ProjectGuid>
+    <ProjectGuid>{87F2672C-90E2-4CD1-97E0-D09B956C81EF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WebPartSharepoint</RootNamespace>
-    <AssemblyName>WebPartSharepoint</AssemblyName>
+    <RootNamespace>Werkend</RootNamespace>
+    <AssemblyName>Werkend</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetOfficeVersion>15.0</TargetOfficeVersion>
     <FileAlignment>512</FileAlignment>
@@ -42,85 +42,28 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.DynamicData" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.SharePoint" />
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Features\Feature1\Feature1.EventReceiver.cs">
-      <DependentUpon>Feature1.feature</DependentUpon>
-    </Compile>
-    <Compile Include="Models\NavSettings.cs" />
-    <Compile Include="PromotedLinkList\PromotedLinkList.ascx.cs">
-      <DependentUpon>PromotedLinkList.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="PromotedLinkList\PromotedLinkList.ascx.g.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PromotedLinkList.ascx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VisualWebPart1\VisualWebPart1.ascx.cs">
-      <DependentUpon>VisualWebPart1.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="VisualWebPart1\VisualWebPart1.ascx.g.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VisualWebPart1.ascx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Features\Feature1\Feature1.feature">
-      <FeatureId>{802bc380-c77f-49e1-873c-3e33f3c1b41c}</FeatureId>
-    </None>
-    <None Include="Images\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{d6d73667-741e-4318-a9c4-f31d31ece08b}</SharePointProjectItemId>
-    </None>
     <None Include="key.snk" />
-    <None Include="PromotedLinkList\PromotedLinkList.webpart" />
-    <None Include="PromotedLinkList\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{b7af9869-a4bc-4f95-914a-8fba6c9e3cb3}</SharePointProjectItemId>
-    </None>
     <None Include="Package\Package.package">
-      <PackageId>{b83931df-9b93-4cd7-9e8e-9961e5ca178d}</PackageId>
+      <PackageId>{1415f919-7d48-4275-a1bb-59ce049fe6fb}</PackageId>
     </None>
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
-    <None Include="VisualWebPart1\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{ddd78548-1ecc-4864-b69e-8dd20f9449c9}</SharePointProjectItemId>
-    </None>
-    <None Include="VisualWebPart1\VisualWebPart1.webpart" />
-    <None Include="XML\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{205b1f6c-8899-46c0-aa43-bedd5798f977}</SharePointProjectItemId>
-    </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Features\Feature1\Feature1.Template.xml">
-      <DependentUpon>Feature1.feature</DependentUpon>
-    </Content>
-    <Content Include="PromotedLinkList\Elements.xml" />
-    <Content Include="PromotedLinkList\PromotedLinkList.ascx">
-      <Generator>SharePointWebPartCodeGenerator</Generator>
-      <LastGenOutput>PromotedLinkList.ascx.g.cs</LastGenOutput>
-    </Content>
-    <Content Include="VisualWebPart1\Elements.xml" />
-    <Content Include="VisualWebPart1\VisualWebPart1.ascx">
-      <Generator>SharePointWebPartCodeGenerator</Generator>
-      <LastGenOutput>VisualWebPart1.ascx.g.cs</LastGenOutput>
-    </Content>
-    <Content Include="XML\navSettings.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\WebPartSharepoint\" />
+    <Folder Include="Features\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

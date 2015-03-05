@@ -1,4 +1,0 @@
-c:\users\jens.delannoy\documents\visual studio 2013\Projects\AutomaticPromotedListGeneration\MainWebPart\bin\Debug\MainWebPart.dll
-c:\users\jens.delannoy\documents\visual studio 2013\Projects\AutomaticPromotedListGeneration\MainWebPart\bin\Debug\MainWebPart.pdb
-c:\users\jens.delannoy\documents\visual studio 2013\Projects\AutomaticPromotedListGeneration\MainWebPart\obj\Debug\MainWebPart.dll
-c:\users\jens.delannoy\documents\visual studio 2013\Projects\AutomaticPromotedListGeneration\MainWebPart\obj\Debug\MainWebPart.pdb
