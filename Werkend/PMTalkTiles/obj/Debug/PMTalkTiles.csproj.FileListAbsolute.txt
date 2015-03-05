@@ -1,0 +1,4 @@
+c:\Users\jens.delannoy\documents\visual studio 2013\Projects\Werkend\PMTalkTiles\bin\Debug\PMTalkTiles.dll
+c:\Users\jens.delannoy\documents\visual studio 2013\Projects\Werkend\PMTalkTiles\bin\Debug\PMTalkTiles.pdb
+c:\Users\jens.delannoy\documents\visual studio 2013\Projects\Werkend\PMTalkTiles\obj\Debug\PMTalkTiles.dll
+c:\Users\jens.delannoy\documents\visual studio 2013\Projects\Werkend\PMTalkTiles\obj\Debug\PMTalkTiles.pdb

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a63fac8f-bc1e-442c-b738-b36c2573fc22" solutionId="a63fac8f-bc1e-442c-b738-b36c2573fc22" resetWebServer="false" sharePointProductVersion="15.0" name="PMTalkTiles" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="1b98915f-2527-4de9-be93-c1e016c385e8" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="ae30014d-6ada-40b4-bf86-01a87110bbdc" />
+  </projectItems>
+</package>

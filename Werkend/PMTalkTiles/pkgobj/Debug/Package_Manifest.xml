@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="a63fac8f-bc1e-442c-b738-b36c2573fc22" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="PMTalkTiles.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="PMTalkTiles, Version=1.0.0.0, Culture=neutral, PublicKeyToken=12d47dc7d6e31182" Namespace="PMTalkTiles.PromotedLinkList" TypeName="*" />
+        <SafeControl Assembly="PMTalkTiles, Version=1.0.0.0, Culture=neutral, PublicKeyToken=12d47dc7d6e31182" Namespace="PMTalkTiles.MainWebPart" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="XML\navSetting.xml" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="PMTalkTiles_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>
