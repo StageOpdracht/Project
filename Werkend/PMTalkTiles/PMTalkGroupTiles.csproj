@@ -111,7 +111,7 @@
       <Generator>SharePointWebPartCodeGenerator</Generator>
       <LastGenOutput>PromotedLinkList.ascx.g.cs</LastGenOutput>
     </Content>
-    <Content Include="XML\navSetting.xml" />
+    <Content Include="XML\navSettings.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

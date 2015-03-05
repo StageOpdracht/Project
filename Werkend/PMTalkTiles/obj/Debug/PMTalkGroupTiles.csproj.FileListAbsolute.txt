@@ -1,0 +1,5 @@
+C:\Users\jens.delannoy\Documents\Visual Studio 2013\Projects\Werkend\PMTalkTiles\bin\Debug\PMTalkTiles.dll
+C:\Users\jens.delannoy\Documents\Visual Studio 2013\Projects\Werkend\PMTalkTiles\bin\Debug\PMTalkTiles.pdb
+C:\Users\jens.delannoy\Documents\Visual Studio 2013\Projects\Werkend\PMTalkTiles\obj\Debug\PMTalkGroupTiles.csprojResolveAssemblyReference.cache
+C:\Users\jens.delannoy\Documents\Visual Studio 2013\Projects\Werkend\PMTalkTiles\obj\Debug\PMTalkTiles.dll
+C:\Users\jens.delannoy\Documents\Visual Studio 2013\Projects\Werkend\PMTalkTiles\obj\Debug\PMTalkTiles.pdb

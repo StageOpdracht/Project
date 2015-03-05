@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package dslVersion="1.0.0.0" 
-        Id="84ca45d6-8625-4f3d-8b4f-8ad3bdcba32c" 
-        solutionId="84ca45d6-8625-4f3d-8b4f-8ad3bdcba32c" 
-        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
-        name="PMTalkNormalTiles"
-        sharePointProductVersion="15.0">
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="84ca45d6-8625-4f3d-8b4f-8ad3bdcba32c" solutionId="84ca45d6-8625-4f3d-8b4f-8ad3bdcba32c" resetWebServer="false" sharePointProductVersion="15.0" name="PMTalkNormalTiles" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="80b745f2-7919-4db6-ad43-862f0e06f746" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="a9239d45-7e73-48fe-9de0-d8740645cf10" />
+  </projectItems>
 </package>

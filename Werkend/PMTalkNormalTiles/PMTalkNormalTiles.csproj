@@ -1,9 +1,10 @@
-﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7dae0866-e329-4a15-ac5b-9840b581787a}</ProjectGuid>
+    <ProjectGuid>{7DAE0866-E329-4A15-AC5B-9840B581787A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PMTalkNormalTiles</RootNamespace>
@@ -12,6 +13,7 @@
     <TargetOfficeVersion>15.0</TargetOfficeVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,26 +34,67 @@
     <WarningLevel>4</WarningLevel>
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.SharePoint" />
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainWebPart\MainWebPart.ascx.cs">
+      <DependentUpon>MainWebPart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MainWebPart\MainWebPart.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MainWebPart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NavSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{80b745f2-7919-4db6-ad43-862f0e06f746}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="MainWebPart\MainWebPart.webpart" />
+    <None Include="MainWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9b90a656-bb64-4860-b7da-ec33395b0db0}</SharePointProjectItemId>
+    </None>
     <None Include="Package\Package.package">
-        <PackageId>{84ca45d6-8625-4f3d-8b4f-8ad3bdcba32c}</PackageId>
+      <PackageId>{84ca45d6-8625-4f3d-8b4f-8ad3bdcba32c}</PackageId>
     </None>
     <None Include="Package\Package.Template.xml">
-        <DependentUpon>Package.package</DependentUpon>
+      <DependentUpon>Package.package</DependentUpon>
     </None>
+    <None Include="XML\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a9239d45-7e73-48fe-9de0-d8740645cf10}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="MainWebPart\Elements.xml" />
+    <Content Include="MainWebPart\MainWebPart.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>MainWebPart.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="XML\navSetting.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

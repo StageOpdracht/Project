@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMTalkGroupTiles", "PMTalkTiles\PMTalkGroupTiles.csproj", "{7183BF91-4443-4F9C-A3C3-1D91B535750B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMTalkNormalTiles", "PMTalkNormalTiles\PMTalkNormalTiles.csproj", "{7DAE0866-E329-4A15-AC5B-9840B581787A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,12 @@ Global
 		{7183BF91-4443-4F9C-A3C3-1D91B535750B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7183BF91-4443-4F9C-A3C3-1D91B535750B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7183BF91-4443-4F9C-A3C3-1D91B535750B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7DAE0866-E329-4A15-AC5B-9840B581787A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DAE0866-E329-4A15-AC5B-9840B581787A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DAE0866-E329-4A15-AC5B-9840B581787A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7DAE0866-E329-4A15-AC5B-9840B581787A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DAE0866-E329-4A15-AC5B-9840B581787A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DAE0866-E329-4A15-AC5B-9840B581787A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

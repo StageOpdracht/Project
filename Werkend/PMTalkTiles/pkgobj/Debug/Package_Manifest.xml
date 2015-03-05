@@ -3,15 +3,14 @@
   <Assemblies>
     <Assembly Location="PMTalkTiles.dll" DeploymentTarget="GlobalAssemblyCache">
       <SafeControls>
-        <SafeControl Assembly="PMTalkTiles, Version=1.0.0.0, Culture=neutral, PublicKeyToken=12d47dc7d6e31182" Namespace="PMTalkTiles.PromotedLinkList" TypeName="*" />
         <SafeControl Assembly="PMTalkTiles, Version=1.0.0.0, Culture=neutral, PublicKeyToken=12d47dc7d6e31182" Namespace="PMTalkTiles.MainWebPart" TypeName="*" />
       </SafeControls>
     </Assembly>
   </Assemblies>
   <TemplateFiles>
-    <TemplateFile Location="XML\navSetting.xml" />
+    <TemplateFile Location="XML\navSettings.xml" />
   </TemplateFiles>
   <FeatureManifests>
-    <FeatureManifest Location="PMTalkTiles_Feature1\Feature.xml" />
+    <FeatureManifest Location="PMTalkGroupTiles_Feature1\Feature.xml" />
   </FeatureManifests>
 </Solution>

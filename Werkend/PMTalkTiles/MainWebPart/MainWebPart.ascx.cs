@@ -54,6 +54,7 @@ namespace PMTalkTiles.MainWebPart
                 counter++;
             }
             Controls.Add(new PromotedLinkListClass());
+            
         }
 
         private void OnClickHandler(object sender, EventArgs e)
